@@ -1,0 +1,25 @@
+# --- Android / Gradle ---
+*.iml
+.gradle/
+build/
+*/build/
+app/release/
+local.properties
+version.properties
+
+# --- Signing ---
+*.jks
+*.keystore
+keystore.properties
+
+# --- IDE ---
+.idea/
+*.iml
+.kotlin/
+
+# --- Claude Code ---
+.claude/
+
+# --- OS ---
+.DS_Store
+Thumbs.db

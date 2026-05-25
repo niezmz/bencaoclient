@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- 仅用于开发联调：放开 HTTP 明文（生产建议关闭/仅白名单域名）。 -->
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>
+
