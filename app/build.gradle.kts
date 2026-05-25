@@ -86,6 +86,12 @@ android {
             ?: readLocalProperty("DOUBAO_MODEL")
             ?: "doubao-seed-1-6-vision-250815"
         buildConfigField("String", "DOUBAO_MODEL", "\"$doubaoModel\"")
+        // Planting method text model (cheaper, faster). Override via DOUBAO_PLANTING_MODEL
+        // e.g. DOUBAO_PLANTING_MODEL=doubao-seed-2-0-mini-260428
+        val doubaoPlantingModel = readProjectProperty("DOUBAO_PLANTING_MODEL")
+            ?: readLocalProperty("DOUBAO_PLANTING_MODEL")
+            ?: "doubao-seed-2-0-mini-260428"
+        buildConfigField("String", "DOUBAO_PLANTING_MODEL", "\"$doubaoPlantingModel\"")
 
 
     }

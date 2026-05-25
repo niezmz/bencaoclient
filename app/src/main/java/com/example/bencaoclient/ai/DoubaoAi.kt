@@ -58,6 +58,9 @@ object DoubaoAi {
 
     private fun model(): String = BuildConfig.DOUBAO_MODEL
 
+    // 栽种方式使用纯文本模型，可在 gradle.properties 中覆盖
+    private fun plantingModel(): String = BuildConfig.DOUBAO_PLANTING_MODEL
+
     suspend fun analyzeBencaoImage(
         context: Context,
         imageUri: Uri,
@@ -113,7 +116,7 @@ object DoubaoAi {
                 .put(JSONObject().put("role", "user").put("content", prompt))
 
             val body = JSONObject()
-                .put("model", model())
+                .put("model", plantingModel())
                 .put("messages", messages)
                 .put("temperature", 0.3)
                 .toString()

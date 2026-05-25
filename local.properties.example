@@ -1,0 +1,15 @@
+## 将此文件重命名为 local.properties 并填写实际值
+## Rename this file to local.properties and fill in actual values
+
+# Android SDK 路径
+sdk.dir=/path/to/Android/Sdk
+
+# 火山方舟 / 豆包 API KEY（必填）
+# 在 https://console.volcengine.com/ark 创建
+DOUBAO_API_KEY=your-api-key-here
+
+# （可选）覆盖默认视觉模型
+# DOUBAO_MODEL=doubao-seed-1-6-vision-250815
+
+# （可选）覆盖默认栽种方式文本模型
+# DOUBAO_PLANTING_MODEL=doubao-seed-2-0-mini-260428
